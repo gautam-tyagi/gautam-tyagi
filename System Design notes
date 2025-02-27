@@ -1,1 +1,26 @@
+#Distributed Systems - We label a service a distributed system if multiple computing nodes are involved. Each node is physically distinct, does not share any computing resources, and can communicate only via network messages. Google Search, Netflix, and Amazon are examples of distributed systems.
+
+#primary reasons we need a distributed system - Making large-scale services possible, Cost efficiency, Fault tolerance, Reduced latency for the customers
+
+#some of the possible drawbacks of distributed systems, if not handled properly are (a) more common partial failures, (b) the network can lose, delay, duplicate, or reorder messages, (c) failures can be hard to detect, (d) node clocks are unreliable
+
+#Scalability - The desirable attribute of a system, network, or process to accommodate increasing numbers of elements or objects, handle growing volumes of work efficiently, and have room for expansion. In other words, a system is scalable when an influx of users, traffic volume, or bandwidth usage does not impact its performance or functional requirements.
+
+#Latency is the time it takes for a system to respond to a user’s request. Bandwidth is the maximum capacity of a network or computing system to transmit data over a specific period of time. Throughput measures the amount of data that a network or computing system successfully sends or receives over a period of time. Suppose we think of data packets as being similar to cars on a highway. In that case, you can think of latency, bandwidth, and throughput in the context of a stretch of highway. Latency corresponds to the time it takes you to get to your intended destination. In contrast, bandwidth corresponds to the number of lanes available to the drivers, and throughput corresponds to the number of cars that have reached their destinations in a given time period.
+
+#Dimensions of scalability
+There are several ways to measure scalability, but all of the metrics will measure the degree of satisfaction for accommodating some type of new service.
+
+#Size scalability refers to the quality of a distributed system to maintain or improve performance regardless of how many resources it has. If you’re horizontally scaling a size scalable system, adding more nodes to accommodate a sudden uptick in traffic shouldn’t slow down or disrupt system performance.
+
+#Administrative scalability is a dimension of scalability concerned with the manual labor required to manage and maintain a system. An administratively scalable system won’t need a considerable increase in administrative overhead when adding new nodes.
+
+#Geographical scalability is a dimension of scalability concerned with the impact of physical distance on a system’s performance. The distance between two nodes can significantly impact the amount of time it takes for them to communicate.
+
+#Load scalability refers to the ability of a distributed system to accommodate heavier and lighter loads flexibly. The definition of load scalability also includes the ability of a system to readily modify, integrate, or remove components to accommodate changing loads.
+
+#Functional scalability refers to the ability of a system to add new features and functions without disrupting operations or slowing down performance.
+
+#Identifying performance bottlenecks: monolithic database, wrong type of database, architectural mistakes, lack of caching, 
+no load balancers, Poorly written code
 
