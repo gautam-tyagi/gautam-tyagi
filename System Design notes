@@ -1,8 +1,24 @@
-#Distributed Systems - We label a service a distributed system if multiple computing nodes are involved. Each node is physically distinct, does not share any computing resources, and can communicate only via network messages. Google Search, Netflix, and Amazon are examples of distributed systems.
+#Distributed Systems - We label a service a distributed system if multiple computing nodes are involved. Each node is physically distinct, does not share any computing resources, and can communicate only via network messages. Google Search, Netflix, and Amazon are examples of distributed systems. Most applications today use some form of a distributed database and must account for their homogenous or heterogenous nature.
+In a homogenous distributed database, each system shares a data model and database management system. On the other hand, heterogeneous databases make it possible to have multiple data models or varied database management systems using gateways to translate data between nodes.
 
-#primary reasons we need a distributed system - Making large-scale services possible, Cost efficiency, Fault tolerance, Reduced latency for the customers
+#Decentralized vs distributed: decentralized is essentially distributed on a technical level, but usually a decentralized system is not owned by a single source. It is harder to manage a decentralized system, as you cannot manage all the participants, unlike a distributed, single course design where one team/company owns all the nodes.
 
-#some of the possible drawbacks of distributed systems, if not handled properly are (a) more common partial failures, (b) the network can lose, delay, duplicate, or reorder messages, (c) failures can be hard to detect, (d) node clocks are unreliable
+#primary reasons we need a distributed system - Making large-scale services possible, Cost efficiency, Fault tolerance, Reduced latency for the customers.
+
+#Benefits of a distributed system
+Distributed systems can be challenging to deploy and maintain, but there are many benefits to this design
+Robustness: the ability to maintain operations during a crisis
+Scaling: A distributed system allows you to scale horizontally so you can account for more traffic.
+Modular growth: There is almost no cap on how much you can scale.
+Fault tolerance: Distributed systems are more fault tolerant than a single machine
+Resiliency: the ability to return to normal operations over an acceptable period of time post-disruption
+Cost effective: The initial cost is higher than a traditional system, but because of their scalability, they quickly become more cost effective
+Low latency: Users can have a node in multiple locations, so traffic will hit the closet node
+Efficiency: Distributed systems break complex data into smaller pieces
+Parallelism: Distributed systems can be designed for parallelism, where multiple processors divide up a complex problem into pieces
+Extensiibility:
+
+#some of the possible drawbacks of distributed systems, if not handled properly are (a) more common partial failures, (b) the network can lose, delay, duplicate, or reorder messages, (c) failures can be hard to detect, (d) node clocks are unreliable, higher initial infrastructure costs, managing of concurrency issues, security issues.
 
 #Scalability - The desirable attribute of a system, network, or process to accommodate increasing numbers of elements or objects, handle growing volumes of work efficiently, and have room for expansion. In other words, a system is scalable when an influx of users, traffic volume, or bandwidth usage does not impact its performance or functional requirements.
 
@@ -23,4 +39,17 @@ There are several ways to measure scalability, but all of the metrics will measu
 
 #Identifying performance bottlenecks: monolithic database, wrong type of database, architectural mistakes, lack of caching, 
 no load balancers, Poorly written code
+
+#Cloud vs distributed systems: They use similar concepts. Distributed computing uses distributed systems by spreading tasks across many machines. It aims to create collaborative resource sharing and provide size and geographical scalability. Cloud computing, on the other hand, uses network hosted servers for storage, process, data management. It is about delivering an on demand environment using transparency, monitoring, and security.
+
+#refer the start approach using this as well:
+https://www.educative.io/blog/system-design-interview-expert-tips
+
+#top 25 - https://www.educative.io/blog/system-design-interview-questions
+
+#System Desgin interviews: here we figure out the requirements and map them onto the computational components and the high-level communication protocols that connect these subsystems. Design questions are open ended, and they’re intentionally vague to start with. Such vagueness mimics the reality of modern day business. So to bigin, an applicant should ask the right questions to solidify the requirements, then identify scope the problemto be able to make a good attempt at solving it within the limited time frame. Finally build the better communication with the interviewer throughout as it’s not a good idea to silently work on the design. Instead, we should engage with the interviewer to ensure that they understand our thought process. 
+
+#At a high level, components could be frontend, load balancers, caches, data processing, and so on. The System Design explains how these components fit together. An architectural design often represents components as boxes. The arrows between these boxes represent who talks to whom and how the boxes or components fit together collectively.
+
+
 
